@@ -1,3 +1,9 @@
+# Project files and directories
+libraryProject/libraryProject/settings.py
+libraryProject/libraryProject/static/
+libraryProject/libraryProject/tmp/
+libraryProject/libraryProject/media/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

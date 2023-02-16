@@ -1,11 +1,12 @@
 {% extends '_base.html' %}
 
-{% block  title %}{{ author.name}} {{ author.last_name }}{% endblock title %}
+{% block  title %}{{ author }}{% endblock title %}
 
 {% block content %}
     <div class="card">
         <div class="card-body">
-            <h1>{{ author.name}} {{ author.last_name }}</h1>
+            <h1>{{ author }}</h1>
+            <h3>Nazionalitá: {{ author.nationality }}</h3>
             <table class="table">
                 <thead>
                     <tr class="table-primary">

@@ -3,7 +3,5 @@ from library.models import Author, Book, Category
 
 def homepage(request):
     books = Book.objects.all()
-    authors = Author.objects.all()
-    categories = Category.objects.all()
-    content = {'book':books, 'author':authors, 'category':categories}
+    content = {'books':books}
     return render(request, 'homepage.html', content)

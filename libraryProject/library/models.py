@@ -38,8 +38,8 @@ class Category(models.Model):
     
 class Book(models.Model):
     title = models.CharField(max_length=50)
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
-    categories =models.ManyToManyField(Category)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE, related_name="books")
+    categories =models.ManyToManyField(Category, related_name="categories")
     isbn = models.PositiveIntegerField()
 
     class Meta:
